@@ -1,0 +1,136 @@
+.All{
+			width: 1070px;
+			height: 940px;
+			background-color: rgb(238,238,238);
+		}
+		.top{
+			width: 1070px;
+			height: 300px;
+		}
+		.center{
+			width: 1070px;
+			height:500px;
+			position: relative;
+		}
+		.center-1{
+			width:1040px;
+			height: 510px;
+			margin-left: 15px;
+
+		}
+		.center1-1{
+			width: 510px;
+			height: 570px;
+			display: inline-block;
+		}
+		.center1-1 img{
+			width: 510px;
+			height: 525px;
+			margin-left: -4px;
+			margin-top: 50px;
+		}
+		.center1-2{
+			width: 510px;
+			height: 500px;
+			margin-left: 10px;
+			display: inline-block;
+		}
+		.RT1{
+			width: 510px;
+			height: 300px;
+			
+		}
+		.RT2{
+			width: 510px;
+			margin-top: 20px;
+			height: 180px;
+		}
+		.top .col-md-3{
+			height: 300px;
+			background-color: rgb(238,238,238);
+			border:none;
+			}
+		.top .col-md-3 .col-md-12{
+			float: left;
+			margin-bottom: 10px;
+			height: 90px;
+			background-color:rgb(255,255,255);
+		}
+
+		.top .col-md-6{
+			height: 290px;
+			/*background-color: rgb(255,255,255);*/
+			border:none;
+			}
+		.top .col{
+			height: 300px;
+			border:none;
+		}
+		
+		.col .col-md-12{
+			float: left;
+			margin-top: 30px;
+			height: 110px;
+		}
+		.col .col-md-12 img{
+			width: 250px;
+			height: 110px;
+			margin-left: -20px;
+			margin-top: -10px;
+		}
+		.center .col-md-5{
+			height: 500px;
+			background-color: rgb(255,255,255);
+		}
+		.pt{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: rgb(102,186,26);
+			margin-top: 20px;
+			margin-left: 15px;
+			display: inline-block;
+		}
+		i#myIcon4{
+			color: white;
+			line-height: 35px;
+			margin-left: 8px;
+			font-size: 25px;
+		}
+		.pt1{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: rgb(123,48,192);
+			margin-top: 20px;
+			margin-left: 15px;
+			display: inline-block;
+		}
+		i#myIcon5{
+			color: white;
+			line-height: 49px;
+			margin-left: 2.6px;
+			font-size: 45px;
+		}
+		.pt2{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: rgb(57,187,233);
+			margin-top: 20px;
+			margin-left: 15px;
+			display: inline-block;
+		}
+		i#myIcon6{
+			color: white;
+			line-height: 49px;
+			margin-left: 2.6px;
+			font-size: 45px;
+		}
+
+		.top .col-md-3 .col-md-12 span{
+			display: inline-block;
+			font-size: 30px;
+			margin-left:80px;
+			margin-top:-200px;
+		}

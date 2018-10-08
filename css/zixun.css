@@ -1,0 +1,44 @@
+
+	#info{
+		padding: 10px;
+		background-color: white;
+	}
+	#info .optionDiv{
+		overflow: hidden;
+	}
+	#info .optionDiv *{
+		float: left;
+		margin-right: 5px;
+	}
+	#info .optionDiv select{
+		width: 200px;
+		height: 30px;
+	}
+	#info table{
+		margin-top:10px;
+	}
+	#info table i{
+		cursor: pointer;
+		color:#66bb0d;
+	}
+	#info table i:nth-child(2){
+		color: red;
+	}
+	.modal{
+		background-color: rgba(0,0,0,0.4);
+	}
+	.modal-dialog{
+		width: 600px;
+		margin-top:0;
+		margin-right: 0;
+	}
+	.backDiv{
+		float: left;
+	}
+	.messageSpan{
+		color: red;
+	}
+	.modal img{
+		width: 240px;
+		height: 90px;
+	}

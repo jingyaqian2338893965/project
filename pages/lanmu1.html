@@ -1,0 +1,47 @@
+<div class="lanmuContent">
+	<div class="btns">
+		<button class="btn btn-success add">添加</button>
+		<button class="btn btn-danger batchDelete">批量删除</button>
+	</div>
+	<table class="table table-bordered table-condensed">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>栏目名称</th>
+				<th>父栏目</th>
+				<th>描述</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="hidden">
+				<td><input type="checkbox" class="myCheck" name=""></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<i class="glyphicon glyphicon-pencil update"></i>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<i class="glyphicon glyphicon-trash deleteById"></i>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 模态框 -->
+	<div class="modal">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<span class="mytitle">添加栏目信息</span>
+				<span class="close myClose">&times;</span>
+			</div>
+			<div class="modal-body">
+				<form action="#">
+					<span class="hiddenId"></span>
+					<span>栏目名称:</span>
+					<input type="" name="">
+				</form>
+			</div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+</div>

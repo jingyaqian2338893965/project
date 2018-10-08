@@ -1,0 +1,25 @@
+.lanmuContent{
+	width: 97%;
+	background-color: #fff;
+	margin-top: 10px;
+	margin-left: 10px;
+	border:1px solid #fff;
+}
+
+div.btns{
+	margin-top: 10px;
+	margin-left: 10px
+}
+
+button{
+	margin-left: 10px
+}
+
+.lanmuContent table{
+	width: 90%;
+	margin: 20px
+}
+
+.lanmuContent table th,.lanmuContent table td{
+	text-align: center;
+}

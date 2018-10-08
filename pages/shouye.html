@@ -1,0 +1,416 @@
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+
+	<!-- 引入iconfont -->
+	<link rel="stylesheet" type="text/css" href="iconFont/iconfont.css">
+	 
+
+
+	 <!-- 引入外部样式 -->
+	 <link rel="stylesheet" type="text/css" href="css/shouye.css">
+
+	<div class="All">
+
+
+
+
+
+
+		<div class="top">
+
+
+			<div class="col-md-3">
+				<div class="col-md-12">
+					<div class="pt">
+						<i class="iconfont icon-yun1" id="myIcon4"></i>
+                        <span>99.9%</span>
+					</div>
+
+
+					
+				</div>
+				<div class="col-md-12">
+					<div class="pt1">
+						<i class="iconfont icon-user" id="myIcon5"></i>
+                        <span>117k</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="pt2">
+						<i class="iconfont icon-18" id="myIcon6"></i>
+                        <span>2,470</span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-md-6">
+				<div id="container" style="min-width: 310px; height: 290px; margin: 0 auto"></div>
+			</div>
+
+
+
+			<div class="col-md-3 col">
+
+				<div class="col-md-12">
+					<img src="images/1.png">
+				</div>
+				<div class="col-md-12">
+                  <img src="images/2.png">
+                </div>
+			</div>
+
+
+		</div>
+
+
+		<div class="center">
+			<div class="center-1">
+
+			<div class="center1-1">
+                    <img src="images/3.png">   
+            </div>
+            <div class="center1-2">
+                    
+
+                    <div class="RT1">
+                        <div id="container2" style="width:510px; height: 300px; margin: 0 auto;">
+                        <span>15.05mb/s</span>
+                    </div>
+                    <div class="RT2">
+                        <div id="container3" style="width: 510px; height: 180px; margin: 0 auto">
+                             <span>15.05mb/s</span>
+                        </div>
+                    </div>     
+            </div>
+
+
+			
+
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+
+	<!-- 引入bootstrap样式 -->
+	<script type="text/javascript" src="Highcharts-4.0.1/css/bootstrap-3.3.0-dist/css/bootstrap.min.css"></script>
+
+	<!-- 引入bootstrap.min.js -->
+	<script type="text/javascript" src="Highcharts-4.0.1/css/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="Highcharts-4.0.1/jquery-2.1.4/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(function () {
+        $('#container').highcharts({
+            title: {
+               enabled:false
+            },
+            credits:{
+                enabled:false
+            },
+            subtitle: {
+                text: 'Source: WorldClimate.com',
+                x: -20
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                   enabled:false
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'pageViews',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }
+            , {
+                name: 'Visitors',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }
+            ]
+        });
+    });
+    
+
+		</script>
+
+		<!-- 做图表 -->
+<script src="Highcharts-4.0.1/js/highcharts.js"></script>
+
+<!-- 将图表导出并打印 -->
+<script src="Highcharts-4.0.1/js/modules/exporting.js"></script>
+
+<script src="Highcharts-4.0.1/js/highcharts-more.js"></script>
+
+
+        <script type="text/javascript">
+$(function () {
+    $('#container2').highcharts({
+    
+        chart: {
+            type: 'gauge',
+            alignTicks: false,
+            plotBackgroundColor: null,
+            plotBackgroundImage: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+    
+        title: {
+            text: 'Speedometer with dual axes'
+        },
+        
+        pane: {
+            startAngle: -150,
+            endAngle: 150
+        },          
+    
+        yAxis: [{
+            min: 0,
+            max: 200,
+            lineColor: '#339',
+            tickColor: '#339',
+            minorTickColor: '#339',
+            offset: -25,
+            lineWidth: 2,
+            labels: {
+                distance: -20,
+                rotation: 'auto'
+            },
+            tickLength: 5,
+            minorTickLength: 5,
+            endOnTick: false
+        }, {
+            min: 0,
+            max: 124,
+            tickPosition: 'outside',
+            lineColor: '#933',
+            lineWidth: 2,
+            minorTickPosition: 'outside',
+            tickColor: '#933',
+            minorTickColor: '#933',
+            tickLength: 5,
+            minorTickLength: 5,
+            labels: {
+                distance: 12,
+                rotation: 'auto'
+            },
+            offset: -20,
+            endOnTick: false
+        }],
+    
+        series: [{
+            name: 'Speed',
+            data: [80],
+            dataLabels: {
+                formatter: function () {
+                    var kmh = this.y,
+                        mph = Math.round(kmh * 0.621);
+                    return '<span style="color:#339">'+ kmh + ' km/h</span><br/>' +
+                        '<span style="color:#933">' + mph + ' mph</span>';
+                },
+                backgroundColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#DDD'],
+                        [1, '#FFF']
+                    ]
+                }
+            },
+            tooltip: {
+                valueSuffix: ' km/h'
+            }
+        }]
+    
+    },
+    // Add some life
+    function(chart) {
+        setInterval(function() {
+            var point = chart.series[0].points[0],
+                newVal, inc = Math.round((Math.random() - 0.5) * 20);
+    
+            newVal = point.y + inc;
+            if (newVal < 0 || newVal > 200) {
+                newVal = point.y - inc;
+            }
+    
+            point.update(newVal);
+    
+        }, 3000);
+    
+    });
+});
+
+        </script>
+
+ <script>
+        $(function () {
+    $('#container3').highcharts({
+    
+        chart: {
+            type: 'gauge',
+            plotBorderWidth: 1,
+            plotBackgroundColor: {
+                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                stops: [
+                    [0, '#FFF4C6'],
+                    [0.3, '#FFFFFF'],
+                    [1, '#FFF4C6']
+                ]
+            },
+            plotBackgroundImage: null,
+            height: 200
+        },
+    
+        title: {
+            text: 'VU meter'
+        },
+        
+        pane: [{
+            startAngle: -45,
+            endAngle: 45,
+            background: null,
+            center: ['25%', '145%'],
+            size: 300
+        }, {
+            startAngle: -45,
+            endAngle: 45,
+            background: null,
+            center: ['75%', '145%'],
+            size: 300
+        }],                     
+    
+        yAxis: [{
+            min: -20,
+            max: 6,
+            minorTickPosition: 'outside',
+            tickPosition: 'outside',
+            labels: {
+                rotation: 'auto',
+                distance: 20
+            },
+            plotBands: [{
+                from: 0,
+                to: 6,
+                color: '#C02316',
+                innerRadius: '100%',
+                outerRadius: '105%'
+            }],
+            pane: 0,
+            title: {
+                text: 'VU<br/><span style="font-size:8px">Channel A</span>',
+                y: -40
+            }
+        }, {
+            min: -20,
+            max: 6,
+            minorTickPosition: 'outside',
+            tickPosition: 'outside',
+            labels: {
+                rotation: 'auto',
+                distance: 20
+            },
+            plotBands: [{
+                from: 0,
+                to: 6,
+                color: '#C02316',
+                innerRadius: '100%',
+                outerRadius: '105%'
+            }],
+            pane: 1,
+            title: {
+                text: 'VU<br/><span style="font-size:8px">Channel B</span>',
+                y: -40
+            }
+        }],
+        
+        plotOptions: {
+            gauge: {
+                dataLabels: {
+                    enabled: false
+                },
+                dial: {
+                    radius: '100%'
+                }
+            }
+        },
+            
+    
+        series: [{
+            data: [-20],
+            yAxis: 0
+        }, {
+            data: [-20],
+            yAxis: 1
+        }]
+    
+    },
+    
+    // Let the music play
+    function(chart) {
+        setInterval(function() {
+            var left = chart.series[0].points[0],
+                right = chart.series[1].points[0],
+                leftVal, 
+                inc = (Math.random() - 0.5) * 3;
+    
+            leftVal =  left.y + inc;
+            rightVal = leftVal + inc / 3;
+            if (leftVal < -20 || leftVal > 6) {
+                leftVal = left.y - inc;
+            }
+            if (rightVal < -20 || rightVal > 6) {
+                rightVal = leftVal;
+            }
+    
+            left.update(leftVal, false);
+            right.update(rightVal, false);
+            chart.redraw();
+    
+        }, 500);
+    
+    });
+});
+
+        </script>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
